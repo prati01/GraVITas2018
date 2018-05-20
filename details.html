@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Details</title>
+	<style type="text/css">
+		body{
+			background-color: #1e90ff;
+			margin: 40px;
+		}
+		.fr1{
+			background-color: black;
+			color: white;
+			padding: 12px 40px;
+		}
+		.fr2{
+			padding: 30px;
+			height: 360px;
+			width: 700px;
+			text-align: center;
+			color: white;
+			font-size: 36px;
+			padding-top: 200px;
+			float: left;
+			border-radius: 14px;
+			margin-top: 20px;
+		}
+		.fr3{
+			padding: 30px;
+			float: right;
+			background-color: white;
+			border-radius: 14px;
+			font-size: 20px;
+			width: 420px;
+			margin-top: 20px;
+		}
+		label{
+			display:inline-block;
+			width:180px;
+		}
+		button.apply{
+			background-color: #1e90ff;
+    		border: none;
+    		color: white;
+    		padding: 20px;
+   		 	text-align: center;
+    		text-decoration: none;
+    		display: inline-block;
+    		font-size: 16px;
+    		margin: 4px 2px;
+    		cursor: pointer;
+    		border-radius: 6px;
+		}
+		button.contact{
+			float: right;
+			margin-top: -70px;
+			background-color: #1e90ff;
+    		border: none;
+    		border-radius: 6px;
+    		color: white;
+    		font-size: 16px;
+    		padding: 20px;
+   		 	text-align: center;
+    		text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="fr1">
+		<h1>GraVITas'18</h1>
+		<button class="contact">Contact Us</button>
+	</div>
+	<div class="fr2" style="background-image: url(images/webdev.jpg); background-position: 50% 70%">
+		Event name <br>
+		Event details would be decribed here with all the information that has to be provided.<br><br>
+		<button class="apply">Register here</button>
+	</div>
+	<div class="fr3">
+		<form>
+			<label>Full Name</label>
+			<input type="text"><br><br>
+			<label>Registration number</label>
+			<input type="text"><br><br>
+			<label>Email address</label>
+			<input type="email"><br><br>
+			<label>Payment method</label>
+			<select>
+				<option>Debit card</option>
+				<option>Credit card</option>
+				<option>Net banking</option>
+				<option>BHEEM</option>
+				<option>PayTM</option>
+			</select><br><br>
+			
+			<button class="apply">Submit</button>
+		</form>
+	</div>
+</body>
+</html>

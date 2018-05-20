@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<script type="text/javascript">
+		function validate()
+		{
+			var uname=document.forms["form1"]["username"].value;
+			var p=document.forms["form1"]["pwd"].value;
+			if(uname=="")
+			{
+				alert("Enter the login ID");
+				return false;
+			}
+			else if(p=="")
+			{
+				alert("Password is required");
+				return false;
+			}
+			else if(uname.length!=9)
+			{
+				alert("Login Id should be 9 characters");
+				return false;
+			}
+			else if(p.length<6)
+			{
+				alert("Password must be minimum of 6 characters");
+				return false;
+			}
+			else
+				return true;
+		}
+	</script>
+	<style type="text/css">
+		label{
+			width: 240px;
+			display: inline-block;
+			font-size: 36px;
+			color: white;
+		}
+		form{
+			padding: 100px;
+			background-color: #0ffffff;
+		}
+		body{
+			margin: 120px 375px 40% -255px;
+			background-image: url(images/Tech.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+		}
+		button{
+			float: right;
+			margin-top: 10px;
+			margin-right: 400px;
+			background-color: #1e90ff;
+    		border: none;
+    		border-radius: 6px;
+    		color: white;
+    		font-size: 20px;
+    		padding: 16px;
+   		 	text-align: center;
+    		text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+<center>
+<form name="form1" method="post" action="details.html" onsubmit="return validate()">
+	<label>Reg no:</label><input type="text" name="username"><br/><br/>
+	<label>Password:</label><input type="password" name="pwd"><br/><br/>
+	<button type="submit" value="Login">LOGIN</button>
+</form>
+</center>
+</body>
+</html>
